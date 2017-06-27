@@ -57,7 +57,8 @@ class App extends Component {
   fetchSearchTopstories(searchTerm, page) {
     fetch(`${PATH_BASE}${PATH_SEARCH}?${PARAM_SEARCH}${searchTerm}&${PARAM_PAGE}${page}&${PARAM_HPP}${DEFAULT_HPP}`)
       .then(response => response.json())
-      .then(result => this.setSearchTopstories(result));
+      .then(result => this.setSearchTopstories(result))
+      .catch(e => e);
   }
 
   componentDidMount() {
@@ -206,3 +207,9 @@ class Button extends Component {
 }
 
 export default App;
+
+export {
+  Button,
+  Search,
+  Table,
+};
