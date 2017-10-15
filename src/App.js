@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import fetch from 'isomorphic-fetch';
 import './App.css';
 
 const DEFAULT_QUERY = 'redux';
@@ -102,7 +103,7 @@ class App extends Component {
       searchTerm,
       results,
       searchKey,
-      error,
+      error
     } = this.state;
 
     const page = (
@@ -204,5 +205,11 @@ const Button = ({
   >
     {children}
   </button>
+
+export {
+  Button,
+  Search,
+  Table,
+};
 
 export default App;
