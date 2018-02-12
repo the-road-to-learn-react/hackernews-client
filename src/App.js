@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
-import fetch from 'isomorphic-fetch';
+import axios from 'axios';
 import { sortBy } from 'lodash';
 import classNames from 'classnames';
 import './App.css';
+
+const source = axios.CancelToken.source();
+const cancelToken = source.token;
 
 const DEFAULT_QUERY = 'redux';
 const DEFAULT_HPP = '100';
@@ -74,16 +77,19 @@ class App extends Component {
   fetchSearchTopStories(searchTerm, page = 0) {
     this.setState({ isLoading: true });
 
-    fetch(`${PATH_BASE}${PATH_SEARCH}?${PARAM_SEARCH}${searchTerm}&${PARAM_PAGE}${page}&${PARAM_HPP}${DEFAULT_HPP}`)
-      .then(response => response.json())
-      .then(result => this.setSearchTopStories(result))
-      .catch(e => this.setState({ error: e }));
+    axios.get(`${PATH_BASE}${PATH_SEARCH}?${PARAM_SEARCH}${searchTerm}&${PARAM_PAGE}${page}&${PARAM_HPP}${DEFAULT_HPP}`, { cancelToken })
+      .then(({ data }) => this.setSearchTopStories(data) : null)
+      .catch(error => !axios.isCancel(error) ? this.setState({ error }) : null);
   }
 
   componentDidMount() {
     const { searchTerm } = this.state;
     this.setState({ searchKey: searchTerm });
     this.fetchSearchTopStories(searchTerm);
+  }
+
+  componentWillUnmount() {
+    source.cancel();
   }
 
   onSearchChange(event) {
