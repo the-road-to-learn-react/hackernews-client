@@ -1,63 +1,28 @@
-.page {
-  margin: 20px;
-}
-
-.interactions {
+.App {
   text-align: center;
 }
 
-.table {
-  margin: 20px 0;
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
 }
 
-.table-header {
-  display: flex;
-  line-height: 24px;
-  font-size: 16px;
-  padding: 0 10px;
-  justify-content: space-between;
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
 }
 
-.table-empty {
-  margin: 200px;
-  text-align: center;
-  font-size: 16px;
+.App-title {
+  font-size: 1.5em;
 }
 
-.table-row {
-  display: flex;
-  line-height: 24px;
-  white-space: nowrap;
-  margin: 10px 0;
-  padding: 10px;
-  background: #ffffff;
-  border: 1px solid #e3e3e3;
+.App-intro {
+  font-size: large;
 }
 
-.table-header > span {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  padding: 0 5px;
-}
-
-.table-row > span {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  padding: 0 5px;
-}
-
-.button-inline {
-  border-width: 0;
-  background: transparent;
-  color: inherit;
-  text-align: inherit;
-  -webkit-font-smoothing: inherit;
-  padding: 0;
-  font-size: inherit;
-  cursor: pointer;
-}
-
-.button-active {
-  border-radius: 0;
-  border-bottom: 1px solid #38BB6C;
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
