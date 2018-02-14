@@ -213,4 +213,10 @@ const Button = ({
     {children}
   </button>
 
+export {
+  Button,
+  Search,
+  Table,
+};
+
 export default App;
