@@ -1,6 +1,6 @@
 # The Road to Learn React - Hackernews Client
 
-[![Build Status](https://travis-ci.org/the-road-to-learn-react/hackernews-client.svg?branch=master)](https://travis-ci.org/the-road-to-learn-react/hackernews-client)
+[![Build Status](https://travis-ci.org/the-road-to-learn-react/hackernews-client.svg?branch=master)](https://travis-ci.org/the-road-to-learn-react/hackernews-client) [![Slack](https://slack-the-road-to-learn-react.wieruch.com/badge.svg)](https://slack-the-road-to-learn-react.wieruch.com/)
 
 The application you will build when you read the book to [learn React](https://www.robinwieruch.de/the-road-to-learn-react/).
 
