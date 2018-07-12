@@ -1,4 +1,4 @@
-# The Road to Learn React - Hackernews Client
+# The Road to Learn React - Hacker News Client
 
 [![Build Status](https://travis-ci.org/the-road-to-learn-react/hackernews-client.svg?branch=master)](https://travis-ci.org/the-road-to-learn-react/hackernews-client) [![Slack](https://slack-the-road-to-learn-react.wieruch.com/badge.svg)](https://slack-the-road-to-learn-react.wieruch.com/)
 
@@ -13,4 +13,4 @@ The application you will build when you read the book to [learn React](https://w
 
 You can find the different chapter commits [in the releases](https://github.com/rwieruch/hackernews-client/releases) too.
 
-After reading the book, you can continue to [learn about Redux and MobX in React](https://roadtoreact.com/course-details?courseId=TAMING_THE_STATE) for state management.
+After reading the book, you can continue to [learn about Redux and MobX in React](https://roadtoreact.com) for state management.
