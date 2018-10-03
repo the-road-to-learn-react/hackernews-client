@@ -112,7 +112,6 @@ exports[`App has a valid snapshot 1`] = `
 exports[`Button has a valid snapshot 1`] = `
 <button
   className=""
-  onClick={undefined}
   type="button"
 >
   Give Me More
@@ -120,13 +119,9 @@ exports[`Button has a valid snapshot 1`] = `
 `;
 
 exports[`Search has a valid snapshot 1`] = `
-<form
-  onSubmit={undefined}
->
+<form>
   <input
-    onChange={undefined}
     type="text"
-    value={undefined}
   />
   <button
     type="submit"
@@ -223,9 +218,7 @@ exports[`Table has a valid snapshot 1`] = `
         }
       }
     >
-      <a
-        href={undefined}
-      >
+      <a>
         1
       </a>
     </span>
@@ -282,9 +275,7 @@ exports[`Table has a valid snapshot 1`] = `
         }
       }
     >
-      <a
-        href={undefined}
-      >
+      <a>
         2
       </a>
     </span>
