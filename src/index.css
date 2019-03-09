@@ -1,7 +1,7 @@
 body {
   color: #222;
   background: #f4f4f4;
-  font: 400 14px CoreSans, Arial,sans-serif;
+  font: 400 14px CoreSans, Arial, sans-serif;
 }
 
 a {
@@ -21,7 +21,6 @@ ul, li {
 input {
   padding: 10px;
   border-radius: 5px;
-  outline: none;
   margin-right: 10px;
   border: 1px solid #dddddd;
 }
@@ -37,8 +36,4 @@ button {
 
 button:hover {
   color: #222;
-}
-
-*:focus {
-  outline: none;
 }
