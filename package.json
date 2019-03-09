@@ -24,6 +24,9 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.10.0",
+    "react-addons-test-utils": "^15.6.2",
     "react-test-renderer": "^16.8.4"
   }
 }
