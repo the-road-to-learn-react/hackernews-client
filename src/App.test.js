@@ -47,13 +47,13 @@ describe('Button', () => {
 
   it('renders without crashing', () => {
     const div = document.createElement('div');
-    ReactDOM.render(<Button>Give Me More</Button>, div);
+    ReactDOM.render(<Button onClick={() => {}}>Give Me More</Button>, div);
     ReactDOM.unmountComponentAtNode(div);
   });
 
   test('has a valid snapshot', () => {
     const component = renderer.create(
-      <Button>Give Me More</Button>
+      <Button onClick={() => {}}>Give Me More</Button>
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
