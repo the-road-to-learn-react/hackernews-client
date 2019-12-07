@@ -1,15 +1,68 @@
-# The Road to Learn React - Hacker News Client
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-[![Build Status](https://travis-ci.org/the-road-to-learn-react/hackernews-client.svg?branch=master)](https://travis-ci.org/the-road-to-learn-react/hackernews-client) [![Slack](https://slack-the-road-to-learn-react.wieruch.com/badge.svg)](https://slack-the-road-to-learn-react.wieruch.com/) [![Greenkeeper badge](https://badges.greenkeeper.io/the-road-to-learn-react/hackernews-client.svg)](https://greenkeeper.io/)
+## Available Scripts
 
-The application you will build when you read the book to [learn React](https://www.robinwieruch.de/the-road-to-learn-react/).
+In the project directory, you can run:
 
-Find all chapter outcomes over [here](https://github.com/the-road-to-learn-react/hackernews-client).
-* [Chapter 1 Outcome](https://github.com/the-road-to-learn-react/hackernews-client/tree/dc46f5efde0059d88a12a52886dd77b85997f78d)
-* [Chapter 2 Outcome](https://github.com/the-road-to-learn-react/hackernews-client/tree/387b16504cad20ecf196662959087806c59de13f)
-* [Chapter 3 Outcome](https://github.com/the-road-to-learn-react/hackernews-client/tree/ffbcb39b125a6cde080bffb74bdb8b4bd105cf75)
-* [Chapter 4 Outcome](https://github.com/the-road-to-learn-react/hackernews-client/tree/1ee4c812f685c752a7e333a6b886875317800883)
-* [Chapter 5 Outcome](https://github.com/the-road-to-learn-react/hackernews-client/tree/5e7cb9b8db98d1237badb462f40b4048462b21f1)
-* [Chapter 6 Outcome](https://github.com/the-road-to-learn-react/hackernews-client/tree/62c8ed57ca2b00b8e35016379d013f9ce7bc5a7c)
+### `npm start`
 
-After reading the book, you can continue to [learn more about JavaScript](https://roadtoreact.com).
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+
+### Analyzing the Bundle Size
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+
+### Making a Progressive Web App
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+
+### Advanced Configuration
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `npm run build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
