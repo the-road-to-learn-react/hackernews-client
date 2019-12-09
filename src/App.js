@@ -20,9 +20,7 @@ const App = () => {
     },
   ];
 
-  // A
   const handleSearch = event => {
-    // C
     console.log(event.target.value);
   };
 
@@ -43,7 +41,6 @@ const Search = props => (
   <div>
     <label htmlFor="search">Search: </label>
 
-    {/* B */}
     <input id="search" type="text" onChange={props.onSearch} />
   </div>
 );
