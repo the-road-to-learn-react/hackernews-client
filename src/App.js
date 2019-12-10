@@ -50,10 +50,11 @@ const App = () => {
 
       <LabelledInput
         id="search"
-        label="Search"
         value={searchTerm}
         onInputChange={handleSearch}
-      />
+      >
+        <strong>Search:</strong>
+      </LabelledInput>
 
       <p>
         Searching for <strong>{searchTerm}</strong>.
@@ -68,13 +69,13 @@ const App = () => {
 
 const LabelledInput = ({
   id,
-  label,
   value,
   type = 'text',
   onInputChange,
+  children,
 }) => (
   <>
-    <label htmlFor={id}>{label}</label>
+    <label htmlFor={id}>{children}</label>
     &nbsp;
     <input
       id={id}
