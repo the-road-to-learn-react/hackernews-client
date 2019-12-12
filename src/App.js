@@ -56,7 +56,7 @@ const App = () => {
   React.useEffect(() => {
     dispatchStories({ type: 'STORIES_FETCH_INIT' });
 
-    fetch(API_ENDPOINT + 'react')
+    fetch(`${API_ENDPOINT}react`)
       .then(response => response.json())
       .then(result => {
         dispatchStories({
