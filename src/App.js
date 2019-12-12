@@ -2,9 +2,9 @@ import React from 'react';
 
 const API_ENDPOINT = 'https://hn.algolia.com/api/v1/search?query=';
 
-const useSemiPersistentState = key => {
+const useSemiPersistentState = (key, initialState) => {
   const [value, setValue] = React.useState(
-    localStorage.getItem(key) || ''
+    localStorage.getItem(key) || initialState
   );
 
   React.useEffect(() => {
@@ -70,7 +70,8 @@ const App = () => {
   }, []);
 
   const [searchTerm, setSearchTerm] = useSemiPersistentState(
-    'search'
+    'search',
+    ''
   );
 
   const handleRemoveStory = item => {
