@@ -58,13 +58,12 @@ const App = () => {
     { data: [], isLoading: false, isError: false }
   );
 
-  // A
   const handleFetchStories = React.useCallback(() => {
-    if (!searchTerm) return; // F
+    if (!searchTerm) return;
 
     dispatchStories({ type: 'STORIES_FETCH_INIT' });
 
-    fetch(`${API_ENDPOINT}${searchTerm}`) // E
+    fetch(`${API_ENDPOINT}${searchTerm}`)
       .then(response => response.json())
       .then(result => {
         dispatchStories({
@@ -75,11 +74,11 @@ const App = () => {
       .catch(() =>
         dispatchStories({ type: 'STORIES_FETCH_FAILURE' })
       );
-  }, [searchTerm]); // D
+  }, [searchTerm]);
 
   React.useEffect(() => {
-    handleFetchStories(); // B
-  }, [handleFetchStories]); // C
+    handleFetchStories();
+  }, [handleFetchStories]);
 
   const handleRemoveStory = item => {
     dispatchStories({
