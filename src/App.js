@@ -48,15 +48,23 @@ const storiesReducer = (state, action) => {
 };
 
 const App = () => {
+  const [searchTerm, setSearchTerm] = useSemiPersistentState(
+    'search',
+    'React'
+  );
+
   const [stories, dispatchStories] = React.useReducer(
     storiesReducer,
     { data: [], isLoading: false, isError: false }
   );
 
-  React.useEffect(() => {
+  // A
+  const handleFetchStories = React.useCallback(() => {
+    if (!searchTerm) return; // F
+
     dispatchStories({ type: 'STORIES_FETCH_INIT' });
 
-    fetch(`${API_ENDPOINT}react`)
+    fetch(`${API_ENDPOINT}${searchTerm}`) // E
       .then(response => response.json())
       .then(result => {
         dispatchStories({
@@ -67,12 +75,11 @@ const App = () => {
       .catch(() =>
         dispatchStories({ type: 'STORIES_FETCH_FAILURE' })
       );
-  }, []);
+  }, [searchTerm]); // D
 
-  const [searchTerm, setSearchTerm] = useSemiPersistentState(
-    'search',
-    ''
-  );
+  React.useEffect(() => {
+    handleFetchStories(); // B
+  }, [handleFetchStories]); // C
 
   const handleRemoveStory = item => {
     dispatchStories({
@@ -84,10 +91,6 @@ const App = () => {
   const handleSearch = event => {
     setSearchTerm(event.target.value);
   };
-
-  const searchedStories = stories.data.filter(story =>
-    story.title.toLowerCase().includes(searchTerm.toLowerCase())
-  );
 
   return (
     <div>
@@ -109,10 +112,7 @@ const App = () => {
       {stories.isLoading ? (
         <p>Loading ...</p>
       ) : (
-        <List
-          list={searchedStories}
-          onRemoveItem={handleRemoveStory}
-        />
+        <List list={stories.data} onRemoveItem={handleRemoveStory} />
       )}
     </div>
   );
