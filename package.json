@@ -27,7 +27,7 @@
   ],
   "devDependencies": {
     "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.10.0",
+    "enzyme-adapter-react-16": "^1.15.2",
     "react-addons-test-utils": "^15.6.2",
     "react-test-renderer": "^16.8.4"
   }
